@@ -41,6 +41,8 @@
   \href{mailto:jon.c.tedesco@gmail.com}{jon.c.tedesco@gmail.com}
   |  
   \href{https://github.com/jtedesco}{github.com/jtedesco}
+  |  
+  Greater Chicago Area
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -49,7 +51,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.33\textwidth} 
+\begin{minipage}[t]{0.30\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
@@ -66,37 +68,95 @@
 \subsection{\href{https://illinois.edu/}{UIUC}}
 \descript{BS Computer Science, 2012}
 \location{3.97 GPA | Undergrad thesis }
-\location{Databases, systems specializations}
 \sectionsep
 
 \subsection{Awards}
 \location{\href{https://cs.illinois.edu/news/illinois-college-engineering-announces-siebel-scholars-class-2013}{Siebel Scholar 2013}}
 \location{\href{https://cs.illinois.edu/about/awards/undergraduate-scholarships-awards/jump-trading-scholars}{Jump Trading Fellowship 2011-2012}}
 \location{James Scholar, Dean's List, et al}
+\sectionsep
+
+\subsection{Coursework}
+Data Mining,
+Distributed Systems,
+Operating Systems,
+Cloud Computing,
+Computer Architecture,
+Data Structures,
+Databases,
+Linear Algebra,
+Machine Learning
+Graph Theory
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COURSEWORK
+%     PUBLICATIONS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Coursework}
-TODO 
+
+\section{Publications} 
+\href{https://dl.acm.org/doi/abs/10.1145/1999747.1999789}{CoMoTo: the collaboration modeling toolkit (ITiCSE'11)}
+\linebreak
+\href{https://ieeexplore.ieee.org/document/6529282}
+  {Theius: A Streaming Visualization Suite for Hadoop Clusters (IC2E'13)}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Skills}
-\subsection{Programming}
-TODO\cite{test}
+\subsection{General}
+Software Development,
+Project Management,
+People Management
+\sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PUBLICATIONS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Technical}
+Microservices,
+Production Deployment,
+Computer Architecture,
+Performance Analysis,
+Statistics
+\sectionsep
 
-\section{Publications} 
-\bibliographystyle{abbrv}
-\bibliography{publications}
-\nocite{*}
+\subsection{Languages}
+Python,
+Java,
+SQL,
+C/C++,
+HTML/CSS,
+JS,
+Ruby,
+PHP
+\sectionsep
+
+\subsection{Frameworks}
+Django,
+Flask,
+Pandas,
+TensorFlow,
+jQuery,
+React.js,
+Guice,
+Angular,
+Spring,
+Ruby on Rails,
+node.js,
+Linux,
+Docker,
+AWS,
+Android,
+Raspberry Pi
+\sectionsep
+
+%\subsection{Hobbies}
+%Saxophone,
+%Piano,
+%Travel,
+%Tinkering,
+%Woodworking,
+%Gaming,
+%Finance
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -106,7 +166,7 @@ TODO\cite{test}
 
 \end{minipage} 
 \hfill
-\begin{minipage}[t]{0.66\textwidth} 
+\begin{minipage}[t]{0.69\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
@@ -114,16 +174,59 @@ TODO\cite{test}
 
 \section{Work Experience}
 
-\runsubsection{Job}
-\descript{| Job title  }
-\location{Date | Location}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\runsubsection{Google}
+\descript{Staff Software Engineer, Tech Lead, Manager}
+\location{Search Stack Performance Analysis | 2017-Present}
+\vspace{\topsep}
 \begin{tightemize}
-\item something
-\item something else
-\item one more thing
+\item Founder, tech lead and manager for a distributed team that builds end to end performance analysis tools for Search and Assistant
+\item Co-led the Search-wide strategic effort to reduce Search latency and capacity and build a culture of performance as a first-class citizen in the Search org
+\item Proposed, proved the viability of, and built an end-to-end Search latency benchmark to enable thousands of engineers to measure their latency impact to the Search stack before deploying to production. Senior leads were unsure this was possible
+\item Redesigned the core Search stack benchmarks to improve their precision and accuracy by an order of magnitude and unify coverage across Search
+\item Worked with cross-organizational partners to decompose the performance analysis problem area, build a cohesive strategy for Search, and merge multiple competing efforts in Search into a cohesive set of performance tools for Google engineers
+\item Worked with cross-organizational partners to decompose the performance analysis problem area, build a cohesive strategy for Search, and merge multiple competing efforts in Search into a cohesive set of performance tools for Google engineers
+\item Developed business value metrics for our team to demonstrate rationale for prioritization and value of our team to organizational leaders, and developed automated methods to amplify and track this impact over time
+\item Mapped out Search workflows, customer needs, prioritization of varied use cases, and worked with cross-functional partners for long term planning
 \end{tightemize}
-\sectionsep
+
+\location{\href{https://en.wikipedia.org/wiki/Google_Web_Server}{GWS} Performance | 2013-2017}
+\begin{tightemize}
+\item Partnered with Search and Google-wide infa engineers drive a performant microservice-based strategy in the Search stack
+\item Co-led team of 5 FTEs to design and build a parallel execution API used by thousands of novice engineers per month to substantially reduce Search latency
+\item Led team of 3 FTEs to build novel extensible, microservices-based automated CPU benchmarks used by thousands of Google engineers each month to measure their impact to GWS. These tools ran with ~zero maintenance cost for 5 years after development saving enough computing resources to pay for our team annually
+\end{tightemize}
+
+\runsubsection{University of Illinois at Urbana Champaign}
+\descript{ }
+\location{PURE founder, board member (2010-2013)}
+\begin{tightemize}
+\item Recruited graduate students, faculty members, and undergraduates to launch the UIUC CS branch of \href{https://pure.engr.illinois.edu/}{PURE}, which boosts UIUC undergraduate research by connecting dozens of students and faculty for semester-long research partnerships 
+\end{tightemize}
+
+\location{CoMoTo: Collaboration Modeling Toolkit (2010-2013)}
+\begin{tightemize}
+\item Developed Java, Python and d3.js based visualization tools using a software similarity engine (\href{https://theory.stanford.edu/~aiken/moss/}{MOSS}) to allow UIUC computer science professors to detect plagiarism in large undergraduate classes
+\end{tightemize}
+
+\runsubsection{Facebook}
+\descript{Software Engineering Intern (2012)}
+\begin{tightemize}
+\item Implemented performance analysis tool to enable real time newsfeed performance analysis by bridging memcached and MySQL systems
+\item Worked with the creator of ReactJS to rebuild core components using React and prototype other performance improvements to the newsfeed
+\end{tightemize}
+
+\runsubsection{DRW Trading Group}
+\descript{Software Engineering Intern (2011)}
+\begin{tightemize}
+\item Developed NPAPI-based plugin \href{}{SockIt} using C++ boost and websockets to enable performant web applications to process real time market data
+\item Measured (C++) and visualized (Python, JS) performance improvements of Intel’s chipsets for matrix-based algorithmic trading strategies
+\end{tightemize}
+
+\runsubsection{Bank of America}
+\descript{Software Engineering Intern (2010)}
+\begin{tightemize}
+\item Developed Java backend systems for FX and options trading departments
+\end{tightemize}
 
 \end{minipage} 
 \end{document}
