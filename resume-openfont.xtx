@@ -95,6 +95,7 @@ Graph Theory
 
 
 \section{Publications} 
+Distributed Latency Profiling through Critical Path Tracing (Google Research Pre-Publication)
 \href{https://dl.acm.org/doi/abs/10.1145/1999747.1999789}{CoMoTo: the collaboration modeling toolkit (ITiCSE'11)}
 \linebreak
 \href{https://ieeexplore.ieee.org/document/6529282}
@@ -106,7 +107,6 @@ Graph Theory
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Skills}
-\subsection{General}
 Software Development,
 Project Management,
 People Management
@@ -116,8 +116,7 @@ People Management
 Microservices,
 Production Deployment,
 Computer Architecture,
-Performance Analysis,
-Statistics
+Performance Analysis
 \sectionsep
 
 \subsection{Languages}
@@ -149,14 +148,13 @@ AWS,
 Android
 \sectionsep
 
-\subsection{Hobbies}
-Saxophone,
-Piano,
-Travel,
-Tinkering,
-Woodworking,
-Gaming,
-Finance
+%\subsection{Hobbies}
+%Saxophone,
+%Piano,
+%Travel,
+%Woodworking,
+%Gaming,
+%Finance
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -179,7 +177,7 @@ Finance
 \location{Search Stack Performance Analysis | 2017-Present}
 \vspace{\topsep}
 \begin{tightemize}
-\item Founder, tech lead and manager for a distributed team (8-10 FTEs) that builds end to end performance analysis tools for Search and Assistant
+\item Founder, tech lead and manager for a distributed team (8-10 FTEs) that built end to end performance analysis tools for Search and Assistant
 \item Co-led and evangelized the Search efforts to reduce Search latency and capacity and build a culture of performance as a first-class citizen in the Search org
 \item Proposed, proved the viability of, and built (3 FTEs) an end-to-end Search latency benchmark to enable thousands of engineers to measure their latency impact to the Search stack before deploying to production (previously thought to be impossible)
 \item Proposed, designed, and built (2-3 FTEs) a latency static analysis tool used as part of the canonical Search latency launch process for all features
@@ -221,7 +219,7 @@ Finance
 \runsubsection{DRW Trading Group}
 \location{Software Engineering Intern | 2011}
 \begin{tightemize}
-\item Developed NPAPI-based plugin \href{}{SockIt} using C++ boost and websockets to enable performant web applications to process real time market data
+\item Developed NPAPI-based plugin \href{https://github.com/sockit}{SockIt} using C++ boost and websockets to enable performant web applications to process real time market data
 \item Measured (C++) and visualized (Python, JS) performance improvements of Intel’s chipsets for matrix-based algorithmic trading strategies
 \end{tightemize}
 \sectionsep
