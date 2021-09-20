@@ -86,8 +86,7 @@ Computer Architecture,
 Data Structures,
 Databases,
 Linear Algebra,
-Machine Learning
-Graph Theory
+ML
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     PUBLICATIONS
@@ -95,7 +94,7 @@ Graph Theory
 
 
 \section{Publications} 
-%Distributed Latency Profiling through Critical Path Tracing (Google Research Pre-Publication)
+Distributed Latency Profiling through Critical Path Tracing (Google Research Pre-Publication)
 \href{https://dl.acm.org/doi/abs/10.1145/1999747.1999789}{CoMoTo: the collaboration modeling toolkit (ITiCSE'11)}
 \linebreak
 \href{https://ieeexplore.ieee.org/document/6529282}
