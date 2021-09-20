@@ -10,7 +10,8 @@
 
 % Package Imports
 \usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry}
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
+\hypersetup{colorlinks=false,pdfborderstyle={/S/U/W 1},pdfborder=0 0 1}
 
 % Publications
 \usepackage{cite}
@@ -41,7 +42,7 @@ Last Updated on \today
 % Name command
 \newcommand{\namesection}[3]{
 \centering{
-\fontsize{20pt}{30pt}
+\fontsize{30pt}{40pt}
 \fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 
 \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
 } \\[5pt]

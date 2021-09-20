@@ -18,7 +18,8 @@
 
 \documentclass[]{resume-openfont}
 \usepackage{fancyhdr}
-\usepackage{cite}
+\usepackage{etoolbox}
+\patchcmd{\namesection}{\rule{\paperwidth}{0.4pt}}{\rule{\paperwidth}{0pt}}{}{}
  
 \pagestyle{fancy}
 \fancyhf{}
@@ -38,7 +39,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \namesection{Jon}{Tedesco} {
-  \href{mailto:jon.c.tedesco@gmail.com}{jon.c.tedesco@gmail.com}
+  jon.c.tedesco@gmail.com
   |  
   \href{https://github.com/jtedesco}{github.com/jtedesco}
   |  
@@ -51,7 +52,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.30\textwidth} 
+\begin{minipage}[t]{0.28\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
@@ -60,19 +61,19 @@
 \section{Education} 
 
 \subsection{\href{https://illinois.edu/}{UIUC}}
-\descript{MS Computer Science, 2013}
-\location{3.95 GPA | 5yr BS/MS}
-\location{Data mining thesis with \href{https://en.wikipedia.org/wiki/Jiawei_Han}{Jiawei Han}}
+\descript{MS Computer Science, 2013 (3.95 GPA)}
+\location{Data mining thesis with \href{https://en.wikipedia.org/wiki/Jiawei_Han}{Jiawei Han}
+and \href{https://cs.illinois.edu/academics/courses/cs242-120208}{CS242} head TA managing 20 staff}
 \sectionsep
 
 \subsection{\href{https://illinois.edu/}{UIUC}}
-\descript{BS Computer Science, 2012}
-\location{3.97 GPA | Undergrad thesis }
+\descript{BS Computer Science, 2012 (3.97 GPA)}
+\location{Undergrad thesis, TA for \href{https://cs.illinois.edu/academics/courses/cs125}{CS125} and \href{https://cs.illinois.edu/academics/courses/cs242-120208}{CS242} class}
 \sectionsep
 
 \subsection{Awards}
 \location{\href{https://cs.illinois.edu/news/illinois-college-engineering-announces-siebel-scholars-class-2013}{Siebel Scholar 2013}}
-\location{\href{https://cs.illinois.edu/about/awards/undergraduate-scholarships-awards/jump-trading-scholars}{Jump Trading Fellowship 2011-2012}}
+\location{\href{https://cs.illinois.edu/about/awards/undergraduate-scholarships-awards/jump-trading-scholars}{Jump Trading Fellowship 2011}}
 \location{James Scholar, Dean's List, et al}
 \sectionsep
 
@@ -145,18 +146,17 @@ node.js,
 Linux,
 Docker,
 AWS,
-Android,
-Raspberry Pi
+Android
 \sectionsep
 
-%\subsection{Hobbies}
-%Saxophone,
-%Piano,
-%Travel,
-%Tinkering,
-%Woodworking,
-%Gaming,
-%Finance
+\subsection{Hobbies}
+Saxophone,
+Piano,
+Travel,
+Tinkering,
+Woodworking,
+Gaming,
+Finance
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -179,53 +179,57 @@ Raspberry Pi
 \location{Search Stack Performance Analysis | 2017-Present}
 \vspace{\topsep}
 \begin{tightemize}
-\item Founder, tech lead and manager for a distributed team that builds end to end performance analysis tools for Search and Assistant
-\item Co-led the Search-wide strategic effort to reduce Search latency and capacity and build a culture of performance as a first-class citizen in the Search org
-\item Proposed, proved the viability of, and built an end-to-end Search latency benchmark to enable thousands of engineers to measure their latency impact to the Search stack before deploying to production. Senior leads were unsure this was possible
-\item Redesigned the core Search stack benchmarks to improve their precision and accuracy by an order of magnitude and unify coverage across Search
+\item Founder, tech lead and manager for a distributed team (8-10 FTEs) that builds end to end performance analysis tools for Search and Assistant
+\item Co-led and evangelized the Search efforts to reduce Search latency and capacity and build a culture of performance as a first-class citizen in the Search org
+\item Proposed, proved the viability of, and built (3 FTEs) an end-to-end Search latency benchmark to enable thousands of engineers to measure their latency impact to the Search stack before deploying to production (previously thought to be impossible)
+\item Proposed, designed, and built (2-3 FTEs) a latency static analysis tool used as part of the canonical Search latency launch process for all features
+\item Redesigned (6 FTEs) the core Search stack CPU benchmarks to improve their precision and accuracy by an order of magnitude and unify coverage across Search
+\item Proposed, designed, built a novel tool to both measure benchmark realism and improve data protection by isolating the ecosystem from production data 
 \item Worked with cross-organizational partners to decompose the performance analysis problem area, build a cohesive strategy for Search, and merge multiple competing efforts in Search into a cohesive set of performance tools for Google engineers
-\item Worked with cross-organizational partners to decompose the performance analysis problem area, build a cohesive strategy for Search, and merge multiple competing efforts in Search into a cohesive set of performance tools for Google engineers
-\item Developed business value metrics for our team to demonstrate rationale for prioritization and value of our team to organizational leaders, and developed automated methods to amplify and track this impact over time
 \item Mapped out Search workflows, customer needs, prioritization of varied use cases, and worked with cross-functional partners for long term planning
 \end{tightemize}
 
 \location{\href{https://en.wikipedia.org/wiki/Google_Web_Server}{GWS} Performance | 2013-2017}
 \begin{tightemize}
-\item Partnered with Search and Google-wide infa engineers drive a performant microservice-based strategy in the Search stack
+\item Partnered with Search and Google-wide infrastructure engineers drive a performant microservice-based strategy in the Search stack
 \item Co-led team of 5 FTEs to design and build a parallel execution API used by thousands of novice engineers per month to substantially reduce Search latency
 \item Led team of 3 FTEs to build novel extensible, microservices-based automated CPU benchmarks used by thousands of Google engineers each month to measure their impact to GWS. These tools ran with ~zero maintenance cost for 5 years after development saving enough computing resources to pay for our team annually
 \end{tightemize}
+\sectionsep
 
 \runsubsection{University of Illinois at Urbana Champaign}
 \descript{ }
-\location{PURE founder, board member (2010-2013)}
+\location{\href{https://pure.engr.illinois.edu/}{PURE} founder, board member | 2010-2013}
 \begin{tightemize}
-\item Recruited graduate students, faculty members, and undergraduates to launch the UIUC CS branch of \href{https://pure.engr.illinois.edu/}{PURE}, which boosts UIUC undergraduate research by connecting dozens of students and faculty for semester-long research partnerships 
+\item Recruited graduate students, faculty members, and undergraduates to launch the UIUC CS branch of \href{https://pure.engr.illinois.edu/}{PURE}, which boosts undergraduate research by connecting dozens of students and faculty for semester-long research partnerships 
 \end{tightemize}
 
-\location{CoMoTo: Collaboration Modeling Toolkit (2010-2013)}
+\location{CoMoTo: Collaboration Modeling Toolkit | 2010-2013}
 \begin{tightemize}
 \item Developed Java, Python and d3.js based visualization tools using a software similarity engine (\href{https://theory.stanford.edu/~aiken/moss/}{MOSS}) to allow UIUC computer science professors to detect plagiarism in large undergraduate classes
 \end{tightemize}
+\sectionsep
 
 \runsubsection{Facebook}
-\descript{Software Engineering Intern (2012)}
+\location{Software Engineering Intern | 2012}
 \begin{tightemize}
 \item Implemented performance analysis tool to enable real time newsfeed performance analysis by bridging memcached and MySQL systems
 \item Worked with the creator of ReactJS to rebuild core components using React and prototype other performance improvements to the newsfeed
 \end{tightemize}
+\sectionsep
 
 \runsubsection{DRW Trading Group}
-\descript{Software Engineering Intern (2011)}
+\location{Software Engineering Intern | 2011}
 \begin{tightemize}
 \item Developed NPAPI-based plugin \href{}{SockIt} using C++ boost and websockets to enable performant web applications to process real time market data
 \item Measured (C++) and visualized (Python, JS) performance improvements of Intel’s chipsets for matrix-based algorithmic trading strategies
 \end{tightemize}
+\sectionsep
 
 \runsubsection{Bank of America}
-\descript{Software Engineering Intern (2010)}
+\location{Software Engineering Intern | 2010}
 \begin{tightemize}
-\item Developed Java backend systems for FX and options trading departments
+\item Developed Java backend FTP systems for FX and options trading depts
 \end{tightemize}
 
 \end{minipage} 
